@@ -35,7 +35,7 @@ export const JournalLayout = (props) => {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' }} className="animate__animated animate__fadeIn animate__faster">
       <CssBaseline />
       <NavBar drawerWidth={drawerWidth} handleDrawerToggle={handleDrawerToggle}/>
       <SideBar drawerWidth={drawerWidth} container={container} mobileOpen={mobileOpen} handleDrawerClose={handleDrawerClose} handleDrawerTransitionEnd={handleDrawerTransitionEnd} />
